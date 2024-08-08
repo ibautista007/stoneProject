@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Fine Natural Stones Inc</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+
+<style>
+  .product-container {
+    background-color: var(--surface-color);
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+
+  .product-gallery {
+    padding: 1rem;
+  }
+
+  .category-card {
+    display: none;
+  }
+
+  .nav-link{
+    color: #3c3c3c;
+  }
+  .nav-link:hover{
+    color: var(--accent-color);
+  }  
+  .nav-link .active{
+    color: var(--accent-color);
+  }    
+</style>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url(assets/img/general/stones-3.jpg);">
+      <div class="container position-relative">
+        <h2>Products & Services</h1>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Get Started Section -->
+    <section id="get-started" class="get-started section">
+
+      <div class="container">
+
+        <div class="row justify-content-between gy-4">
+
+          <div class="col d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+            <div class="content">
+              <h3>Fine Natural Stone</h3>
+              <p>
+                At Fine Natural Stone, we offer an extensive range of onyx marble varieties, each displaying unique
+                patterns and colors. From classic white and honey hues to dramatic black and multi-colored options, our
+                collection caters to diverse design preferences.
+                <br><br>
+                We provide comprehensive services tailored to meet the specific needs of our clients:
+                Consultation: Expert advice on selecting the right onyx marble for your project.
+                Customization: Tailored solutions to accommodate unique design requirements.
+                Fabrication & Installation: Offering fabrication and installation of onyx marble with fine finishing.
+                Logistics: Efficient shipping and delivery services worldwide, ensuring a timely and secure supply of
+                onyx marble to our customers.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="container product-container p-4">
+        <div class="row">
+          <!-- Menú de categorías (Sidebar) -->
+          <nav class="col-md-3 col-lg-2 sidebar">
+            <h4>Products</h4>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a class="nav-link active" href="#" data-category="1">Blue Onyx</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link" href="#" data-category="2">White Onyx</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link" href="#" data-category="3">Pink Onyx</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link" href="#" data-category="4">Green Onyx</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link" href="#" data-category="5">Honey Yellow Onyx</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link" href="#" data-category="6">Silver Onyx</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link" href="#" data-category="7">Velluto Onyx</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link" href="#" data-category="8">Honey White Onyx</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="col-md-9 col-lg-10 product-gallery">
+            <div id="products" class="row">
+
+              <!-- blue -->
+              <div class="col-lg-4 col-md-4 col-sm-6 mb-4 category-card" data-category="1">
+                <div class="card">
+                  <a href="assets/img/products/blue-onyx/blue-onyx-1.jpg" title="Blue Onyx"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <img src="assets/img/products/blue-onyx/blue-onyx-1.jpg" class="card-img-top">
+                  </a>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Blue onyx</h5>
+                    <p class="card-text">$20.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- white -->
+              <div class="col-lg-4 col-md-4 col-sm-6 mb-4 category-card" data-category="2">
+                <div class="card">
+                  <a href="assets/img/products/white-onyx/white-onyx-1.jpg" title="White Onyx"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <img src="assets/img/products/white-onyx/white-onyx-1.jpg" class="card-img-top">
+                  </a>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">White onyx</h5>
+                    <p class="card-text">$20.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 mb-4 category-card" data-category="2">
+                <div class="card">
+                  <a href="assets/img/products/white-onyx/white-onyx-2.jpg" title="White Onyx"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <img src="assets/img/products/white-onyx/white-onyx-2.jpg" class="card-img-top">
+                  </a>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">White onyx</h5>
+                    <p class="card-text">$20.00</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!-- pink -->
+              <div class="col-lg-4 col-md-4 col-sm-6 mb-4 category-card" data-category="3">
+                <div class="card">
+                  <a href="assets/img/products/pink-onyx/pink-onyx-1.jpg" title="Pink Onyx"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <img src="assets/img/products/pink-onyx/pink-onyx-1.jpg" class="card-img-top">
+                  </a>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Pink onyx</h5>
+                    <p class="card-text">$20.00</p>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- green -->
+              <div class="col-lg-4 col-md-4 col-sm-6 mb-4 category-card" data-category="4">
+                <div class="card">
+                  <a href="assets/img/products/green-onyx/green-onyx-1.jpg" title="Green Onyx"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <img src="assets/img/products/green-onyx/green-onyx-1.jpg" class="card-img-top">
+                  </a>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Green onyx</h5>
+                    <p class="card-text">$20.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 mb-4 category-card" data-category="4">
+                <div class="card">
+                  <a href="assets/img/products/green-onyx/green-onyx-2.jpg" title="Green Onyx"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <img src="assets/img/products/green-onyx/green-onyx-2.jpg" class="card-img-top">
+                  </a>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Green onyx</h5>
+                    <p class="card-text">$20.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 mb-4 category-card" data-category="4">
+                <div class="card">
+                  <a href="assets/img/products/green-onyx/green-onyx-3.jpg" title="Green Onyx"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <img src="assets/img/products/green-onyx/green-onyx-3.jpg" class="card-img-top">
+                  </a>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Green onyx</h5>
+                    <p class="card-text">$20.00</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!-- honey yellow -->
+              <div class="col-lg-4 col-md-4 col-sm-6 mb-4 category-card" data-category="5">
+                <div class="card">
+                  <a href="assets/img/products/honey-yellow-onyx/honey-yellow-onyx-1.jpg" title="Honey Yellow Onyx"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <img src="assets/img/products/honey-yellow-onyx/honey-yellow-onyx-1.jpg" class="card-img-top">
+                  </a>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Honey Yellow onyx</h5>
+                    <p class="card-text">$20.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 mb-4 category-card" data-category="5">
+                <div class="card">
+                  <a href="assets/img/products/honey-yellow-onyx/honey-yellow-onyx-2.jpg" title="Honey Yellow Onyx"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <img src="assets/img/products/honey-yellow-onyx/honey-yellow-onyx-2.jpg" class="card-img-top">
+                  </a>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Honey Yellow onyx</h5>
+                    <p class="card-text">$20.00</p>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- silver onyx -->
+              <div class="col-lg-4 col-md-4 col-sm-6 mb-4 category-card" data-category="6">
+                <div class="card">
+                  <a href="assets/img/products/silver-onyx/silver-onyx-1.jpg" title="Silver Onyx"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <img src="assets/img/products/silver-onyx/silver-onyx-1.jpg" class="card-img-top">
+                  </a>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Silver onyx</h5>
+                    <p class="card-text">$20.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 mb-4 category-card" data-category="6">
+                <div class="card">
+                  <a href="assets/img/products/silver-onyx/silver-onyx-2.jpg" title="Silver Onyx"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <img src="assets/img/products/silver-onyx/silver-onyx-2.jpg" class="card-img-top">
+                  </a>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Silver onyx</h5>
+                    <p class="card-text">$20.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- velluto onyx -->
+              <div class="col-lg-4 col-md-4 col-sm-6 mb-4 category-card" data-category="7">
+                <div class="card">
+                  <a href="assets/img/products/velluto-onyx/velluto-onyx-1.jpg" title="Velluto Onyx"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <img src="assets/img/products/velluto-onyx/velluto-onyx-1.jpg" class="card-img-top">
+                  </a>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Velluto onyx</h5>
+                    <p class="card-text">$20.00</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!-- honey white -->
+              <div class="col-lg-4 col-md-4 col-sm-6 mb-4 category-card" data-category="8">
+                <div class="card">
+                  <a href="assets/img/products/honey-white-onyx/honey-white-onyx-1.jpg" title="Honey White Onyx"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <img src="assets/img/products/honey-white-onyx/honey-white-onyx-1.jpg" class="card-img-top">
+                  </a>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Honey White onyx</h5>
+                    <p class="card-text">$20.00</p>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Custom JS -->
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const categories = document.querySelectorAll('.nav-link');
+          const products = document.querySelectorAll('.category-card');
+
+          // Show products of the first category by default
+          showProducts('1');
+
+          // Add click event to category links
+          categories.forEach(category => {
+            category.addEventListener('click', function (e) {
+              e.preventDefault();
+              const categoryId = this.getAttribute('data-category');
+              showProducts(categoryId);
+            });
+          });
+
+          function showProducts(categoryId) {
+            products.forEach(product => {
+              if (product.getAttribute('data-category') === categoryId) {
+                product.style.display = 'block';
+              } else {
+                product.style.display = 'none';
+              }
+            });
+
+            // Update active class
+            categories.forEach(cat => {
+              cat.classList.remove('active');
+            });
+            document.querySelector(`.nav-link[data-category="${categoryId}"]`).classList.add('active');
+          }
+        });
+      </script>
+
+
+
+    </section><!-- /Get Started Section -->
+
+
+
+
+
+
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Fine Natural Stones Inc</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Hic solutasetp</h4>
+          <ul>
+            <li><a href="#">Molestiae accusamus iure</a></li>
+            <li><a href="#">Excepturi dignissimos</a></li>
+            <li><a href="#">Suscipit distinctio</a></li>
+            <li><a href="#">Dilecta</a></li>
+            <li><a href="#">Sit quas consectetur</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nobis illum</h4>
+          <ul>
+            <li><a href="#">Ipsam</a></li>
+            <li><a href="#">Laudantium dolorum</a></li>
+            <li><a href="#">Dinera</a></li>
+            <li><a href="#">Trodelas</a></li>
+            <li><a href="#">Flexo</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Fine Natural Stones Inc.</strong> <span>All Rights
+          Reserved</span></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
