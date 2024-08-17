@@ -142,8 +142,15 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 50px;
+  max-height: 80px;
   margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .header .logo img{
+    max-height: 50px;
+    margin-right: 8px;
+  }
 }
 
 .header .logo h1 {
@@ -762,6 +769,42 @@ section,
   overflow: hidden;
 }
 
+.carousel-caption {
+  transform: translateY(50%);
+  bottom: 50% !important;
+  z-index: 1000;
+}
+
+.carousel-caption h2 {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  font-size: 56px;
+  font-weight: 700;
+  position: relative;
+}
+
+
+.carousel-caption h3 {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+}
+
+.carousel-caption h2:after, h3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--accent-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
 .hero .info {
   position: relative;
   inset: 0;
@@ -775,6 +818,8 @@ section,
     padding: 100px 50px 60px 50px;
   }
 }
+
+
 
 .hero .info h2 {
   margin-bottom: 30px;
@@ -798,9 +843,16 @@ section,
 }
 
 @media (max-width: 768px) {
-  .hero .info h2 {
+  .carousel-caption h2 {
     font-size: 36px;
   }
+  .carousel-caption h3 {
+    font-size: 24px;
+  }  
+  /*.carousel-caption {
+    transform: none;
+    bottom: 1% !important;
+  }  */
 }
 
 .hero .info p {
@@ -1340,6 +1392,12 @@ section,
     font-size: 14px;
     margin: 0 5px;
   }
+}
+
+.projects .portfolio-item img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
 }
 
 
@@ -2847,4 +2905,37 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+# Producs Stones
+--------------------------------------------------------------*/
+.product-container {
+  background-color: var(--surface-color);
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.product-gallery {
+  padding: 1rem;
+}
+
+.category-card {
+  display: none;
+}
+
+.nav-link{
+  color: #3c3c3c;
+}
+.nav-link:hover{
+  color: var(--accent-color);
+}  
+.nav-link .active{
+  color: var(--accent-color);
+}  
+
+.card-img-stone{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
 }
